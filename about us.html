@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Our Team</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            color: #2a5283;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        p {
+            color: #555;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .team-member {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .bio {
+            max-width: 600px;
+        }
+
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section id="intro" class="animated" style="animation-delay: 0.5s; animation-name: fadeIn;">
+        <h1>Welcome to Our World of Innovation</h1>
+        <p align="justify">
+            At <strong>YourTech Solutions</strong>, we are more than developers; we are dreamweavers, architects of the digital realm. Meet the minds behind the magic - Aditya, Shivam, and Sona - your dedicated team for frontend, backend, and database development.
+        </p>
+    </section>
+
+    <section id="frontend" class="animated" style="animation-delay: 1s; animation-name: fadeIn;">
+        <h2>Aditya - Frontend Developer</h2>
+        <div class="team-member">
+            <img src="aditya.jpeg" alt="Aditya's Photo" width="300" height="400">
+            <div class="bio">
+                <p align="justify">
+                    Greetings, I'm Aditya, the creative force behind our frontend wonders. My canvas is the user interface, and I paint with pixels. Transforming concepts into captivating digital experiences is my forte.
+                </p>
+                <p align="justify">
+                    When I'm not coding, you'll find me exploring new design trends or indulging in a cup of artisanal coffee.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="backend" class="animated" style="animation-delay: 1.5s; animation-name: fadeIn;">
+        <h2>Sona - Backend Developer</h2>
+        <div class="team-member">
+            <img src="Sona.jpeg" alt="Sona's Photo" width="300" height="400">
+            <div class="bio">
+                <p align="justify">
+                    Hey, I'm Sona, the code ninja lurking in the backend shadows. Crafting robust server-side solutions is my playground. I thrive on turning intricate requirements into seamless functionalities.
+                </p>
+                <p align="justify"> 
+                    Outside of coding, you might catch me exploring the latest tech podcasts or tinkering with a new gadget.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="dbms" class="animated" style="animation-delay: 2s; animation-name: fadeIn;">
+        <h2>Shivam - DBMS Develpoer</h2>
+        <div class="team-member">
+            <img src="Shivam.jpeg" alt="Shivam's Photo" width="400" height="600">
+            <div class="bio">
+                <p align="justify">
+                    Hi, I'm Shivam, the database sorceress weaving the threads of data. Managing and optimizing databases is my playground. I ensure our data dances harmoniously, contributing to the heartbeat of our applications.
+                </p>
+                <p align="justify">
+                    Beyond databases, I enjoy exploring data visualization techniques and savoring a good book.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="animated" style="animation-delay: 2.5s; animation-name: fadeIn;">
+        <h2>Let's Create Something Extraordinary Together</h2>
+        <p>
+            Ready to embark on a digital journey with us? Reach out to <a href="mailto:blood@yourtechsolutions.com">blood@yourtechsolutions.com</a>. We're excited to turn your visions into reality.
+        </p>
+    </section>
+
+</body>
+</html>

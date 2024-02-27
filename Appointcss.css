@@ -1,0 +1,81 @@
+<style>
+    body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8eae2;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background-color: #f5f7fc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+  color: #bad138;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #3498db;
+  color: rgb(23, 178, 206);
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #bd1a6b;
+}
+
+#thankYouSection {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #2ecc71;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+div a:hover {
+    margin-top: auto;
+    width: 50%;
+    border: 3px solid green;
+  padding: 4px;
+  background-color: #d42121;
+  border-radius: 8px;
+  color: #c7c430;
+  text-align: center:
+}
+
+</style>

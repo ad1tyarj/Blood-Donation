@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Login</title>
+    <link rel="stylesheet" href="Authcss2.css">
+</head>
+<body>
+    
+
+<div id="loginContainer">
+        <img
+        class=""
+        data-clientId="ImageACCaOZBA"
+        id="ImageACCaOZBA-id"
+        src="login.png"
+        height="150"
+        width="150"
+        alt="sl"
+        type="page"
+        clientId="ImageACCaOZBA"
+        parent_id="Div7d6a"
+        name="ImageACCa">
+    <h2>Login</h2>
+    <form onsubmit="return handleLogin()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <div>
+        <p>Don't have an account? <a href="#" onclick="showRegister()">Create one</a></p>
+        <p><a href="#" onclick="showForgotPassword()">Forgot Password?</a></p>
+    </div>
+</div>
+
+<div id="registerContainer" style="display: none;">
+    <h2>Create Account</h2>
+    <form onsubmit="return handleRegister()">
+        <label for="newUsername">Name:</label>
+        <input type="text" id="newUsername" required name="name">
+
+        <label for="newemail">Email:</label>
+        <input type="text" id="newemail" required name="email">
+        <label for="newmobileno">Mobile No:</label>
+        <input type="text" id="newnewmobileno" required name="mobileno">
+
+        <label for="newPassword">Password:</label>
+        <input type="password" id="newPassword" required name="password">
+
+        <label for="bloodGroup">Blood Group:</label>
+        <select id="bloodGroup" name="bloodGroup">
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+        </select>
+
+        <button type="submit">Create Account</button>
+    </form>
+
+    <div id="accountPreview" style="display: none;">
+        <h3>Account Preview</h3>
+        <p><strong>Username:</strong> <span id="previewUsername"></span></p>
+        <p><strong>Password:</strong> <span id="previewPassword"></span></p>
+        <p><strong>Blood Group:</strong> <span id="previewBloodGroup"></span></p>
+    </div>
+
+    <div>
+        <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+    </div>
+</div>
+
+<div id="forgotPasswordContainer" style="display: none;">
+    <h2>Forgot Password</h2>
+    <form onsubmit="return handleForgotPassword()">
+        <label for="forgotUsername">Username:</label>
+        <input type="text" id="forgotUsername" required>
+
+        <button type="submit">Reset Password</button>
+    </form>
+
+    <div>
+        <p>Remember your password? <a href="#" onclick="showLogin()">Login</a></p>
+    </div>
+</div>
+
+<script src="Authjs2.js"></script>
+</body>
+</html>

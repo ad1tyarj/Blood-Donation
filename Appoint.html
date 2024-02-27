@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Donation Appointment Booking</title>
+  <link rel="stylesheet" href="Appointcss.css">
+  <script src="appointments.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Blood Donation Appointment Booking</h2>
+
+    <!-- Appointment scheduling form -->
+    <form id="appointmentForm">
+      <h3>Schedule an Appointment</h3>
+
+      <label for="donorName">Your Name:</label>
+      <input type="text" id="donorName" name="donorName" required>
+
+      <label for="bloodGroup">Blood Group:</label>
+      <select id="hospital" name="hospital" required>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="Ab-">AB-</option>
+      </select>
+
+      <label for="contactNo">Contact No:</label>
+      <input type="text" id="contactNo" name="contactNo" required>
+
+      <label for="donorEmail">Your Email:</label>
+      <input type="email" id="donorEmail" name="donorEmail" required>
+
+      <label for="hospital">Choose a Hospital:</label>
+      <select id="hospital" name="hospital" required>
+        <option value="St. Mary's Hospital">PMCH Hospital Dhanbad</option>
+        <option value="City General Hospital">City General Hospital Bokaro</option>
+        <option value="Sunset Medical Center">Tata Medical Center Jamshedpur</option>
+      </select>
+
+      <label for="appointmentDate">Preferred Date:</label>
+      <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+      <label for="appointmentTime">Preferred Time:</label>
+      <input type="time" id="appointmentTime" name="appointmentTime" required>
+      
+      <div class="center">
+        <p>
+          <a href="Blood.html" onclick="bookAppointment()">Book Appointment</a>
+        </p>
+      </div>
+    </form>
+  </div>
+  <script src="Appointjs.js"></script>
+</body>
+</html>
